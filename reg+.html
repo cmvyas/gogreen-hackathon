@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/rupee-sign?style=solid">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Cardo&family=Merienda&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        background-color: #a8a1a1ce;
+        background-image: url("./img/water.gif");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .container{
+        font-family: 'Hind', sans-serif;
+        display:grid;
+        grid-template-columns:auto 750px 100px ;
+        grid-template-rows:10% 80% 10%;
+        width:100%;
+        height:100vh;
+        margin-top:0px;
+        
+  }
+   
+    .input-b{
+        color: #ffffff;
+        width:200px;
+        height:25px;
+        margin:10px;
+        background:none;
+        border:none;
+        outline:none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    .detail{
+        box-shadow: 2px 2px 2px 2px rgb(24, 21, 21);
+        height:540px; 
+        justify-content: center;
+        margin:0;
+        padding-top:30px;
+        float:left;
+        width:550px;
+        justify-items: center;
+        padding-right: 60px;;
+        position:relative;
+        margin-left: -20px;
+        font-size:20px;
+        border-radius: 10px;;
+        grid-column-start:2 ;
+        grid-column-end:3;
+        grid-row-start:2;
+        grid-row-end: 3;
+        background-color: #004100;
+        opacity: 0.8;
+        padding-top: 10px;
+    }
+    .fo{
+        top:80px;
+        display:grid;
+        width:550px;
+        grid-column-gap:20px;
+        grid-template-columns: 5% 40% 5% 40% 5%;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .c1{grid-column-start:2 ;
+        grid-column-end: 3;
+        margin:5px;
+        color: wheat;
+        
+    }
+    .c2{margin:5px;
+        grid-column-start: 4;
+        grid-column-end: 5;
+      
+        color: wheat;
+    }
+    .c3{margin:10px;
+        grid-column-start: 2;
+        grid-column-end: 3;margin:5px;
+       
+        color: wheat;
+    }
+    .c4{margin:10px;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        color: wheat;
+    }
+    .c5{margin:10px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        color: wheat;
+    }
+    .c6{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        color: wheat;
+    }
+    .c7{grid-column-start: 2;margin:10px;
+        grid-column-end: 3;
+        color: wheat;
+    }
+    .c8{margin:10px;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        color: wheat;
+    }
+    .c9{margin:10px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        color: wheat;
+    }
+    .c10{grid-column-start: 4;
+        grid-column-end: 5;
+        margin:10px;
+        color: wheat;
+
+    }
+    .c11{grid-column-start: 2;
+        grid-column-end: 3;margin:5px;
+        color: wheat;
+
+    }
+    form{margin-top:-50px;
+        margin-left:40px;
+        color: wheat;
+    }
+   select{
+       color:rgb(228, 228, 228);
+       width:300px;
+       align-items: left;
+       height:30px;
+       margin-top:19px;
+       margin-left:5px;
+       position: relative;
+       font-family: 'Zilla Slab', serif;
+       font-size: 15px;;
+       background:none;
+       background-color: #004100e5;
+border:none;
+outline:none;
+border-bottom: 1px solid white;
+       
+   }
+   option:checked{
+       color:rgb(3, 0, 0);
+   }
+   input{
+    font-family: 'Zilla Slab', serif;
+       font-size: 15px;;
+   }
+   .fo .m{
+       
+       height:10px;
+   }
+       form{
+margin:0px;
+margin-top:20px;
+padding: 0px;;
+width:500px;
+justify-items: center;
+       
+   }
+   button{
+       width:100px;
+       height:45px;
+       margin-left:230px;
+       font-size: 1vmax;
+       margin-top:40px;
+       background-color: #ffffff;
+       color: #004100;
+       border: none;
+       padding: 6px 6px 6px 6px;
+   }
+   body a{
+       text-decoration: none;
+   }
+</style>
+    </head>
+    <body>
+<div class="container">
+  <a href="./index2.html" style="text-decoration: none;">
+      <header class="codrops-header">
+					
+        <h1 class="codrops-header__title" 
+         style="font-size: 1.6vw;
+                color: rgb(0, 73, 0);
+                font-family: 'Open Sans Condensed', sans-serif;
+                padding: 12px;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+                text-shadow: rgb(205, 218, 255) 2px 2px;
+                text-decoration: none;
+                
+        ">Go-Green</h1>
+                </header></a>
+
+    <div class="detail">
+        <form action="#"><div class="fo">
+          <span style="justify-content: center;text-align: center;margin-left: 280px;font-size: 25px; "> CONNECT</span><br><br>
+            <div class="c1">
+            
+            <span style="display: flex;"><i style="margin-top: 17px;" class="fa fa-user icon"></i>
+                
+                <input class="input-b" type="text" placeholder="Enter your Name" id='namebox'></span></div> 
+            
+            <div class="c2">
+
+            
+            <span style="display: flex;"> <i class="fa fa-circle"  style="margin-top:17px;font-size: 24px;" aria-hidden="true"></i>    
+                 <input  id='namebox' class="input-b" type="number" placeholder="Enter Age"></span></div>
+            <div class="c3">
+            
+            <span style="display: flex;"> <i class="fa fa-pagelines" style="font-size: 24px;margin-top:17px;" aria-hidden="true"></i>
+                <select  id="crop" name="crop" >
+                <option value="one">--select a crop--</option>
+                <option value="wheat">Wheat</option>
+                <option value="rice">Rice</option>
+                <option value="bajra">Bajra</option>
+                <option value="cabbage">Cabbage</option>
+                <option value="cauliflower">Cauliflower</option>
+                <option value="chilly">Chilly</option>
+                <option value="coconut">Coconut</option>
+                <option value="corn">Corn</option>
+                <option value="ginger">Ginger</option>
+                <option value="grape">Grape</option>
+                <option value="mushroom">Mushroom</option>
+                <option value="onion">Onion</option>
+                <option value="potato">Potato</option>
+                <option value="tomato">Tomato</option>
+            </select></span></div>
+            <div class="c4">
+           
+            <span style="display: flex;"><i class="fa fa-inr" style="font-size:24px;margin-top: 17px" aria-hidden="true"></i>
+                <input id='pricebox' class="input-b" type="number" placeholder="Enter price / kg"></span></div>
+            <div class="c5">
+           
+            <span style="display:flex;margin-top: 20px;">
+                <input id='pricebox' name ="gender" type="radio"> &nbsp;<i class="fa fa-male"  aria-hidden="true">  Male    </i> &nbsp;<input type="radio"  name="gender">&nbsp;<i class="fa fa-female"  aria-hidden="true">  Female  </i>  </span>  </div>
+            <div class="c6">
+            
+            <span style="display: flex;"> <i class="fa fa-location-arrow" style="font-size:24px;margin-top: 20px;" aria-hidden="true"></i>
+                <select  style="margin-left:12px;width:205px" id="state" name="state">
+                <option value="one"  selected >--select a state--</option>
+                <option value="Andhra">Andhra Pradesh</option>
+                <option value="Arunachal">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West">West Bengal</option>
+            </select></span></div>
+            <div class="c7">    
+                <span style="display:flex">    
+                    <i class="fa fa-map-marker" style="font-size: 24px;margin-top:15px" aria-hidden="true"></i>
+                    <input id='citybox' type="text" class="input-b" placeholder="Enter your city"></div>
+            <div class="c8"></span>
+                <span style="display:flex">
+                <i class="fa fa-map-pin" style="margin-top:19px" aria-hidden="true"></i>
+            <input id='pinbox' type="text" class="input-b" placeholder="Enter your pincode"></span></div>
+            <div class="c9">
+            
+             <span style="display:flex">  <i class="fa fa-phone" style="margin-top:17px;" aria-hidden="true"></i>
+            <input id='numberbox' class="input-b" type="text"placeholder="Enter your number"></span> </div>
+         <div class="c11">
+            <button onclick="nextpage()" width=250px style="background-color: aliceblue;outline:none;border:1px solid #8FD974;border-radius: 4px;;">SUBMIT</button>
+        </div>
+        </div>
+        </form>
+           
+    </div>
+    <!-- <div id="nextdetail">
+        <p style="width: 600px; display:block;padding:auto;letter-spacing: 2px;;justify-content: center;text-align:center;margin-left:-10px;margin-top:700px;;color:white; background-color: rgb(0, 66, 3); opacity: 0.8; visibility: hidden;"><span style="font-size: 40px;text-align: center;">Thanks for connecting with us,</span><br><span style="font-size: 35px;;"> we will verify your data and will join you soon!</span></p>
+        </div>
+        <script>
+            document.getElementById("deta").innerHTML=document.getElementById("cont").innerHTML;
+            function nextpage(){
+                document.getElementById("deta").innerHTML=document.getElementById("nextdetail").innerHTML;
+            }
+        </script> -->
+
+
+
+<script src="https://www.gstatic.com/firebasejs/9.0.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.01/firebase-database.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-auth.js"></script>
+
+<!-- <script id="backend">
+  var firebaseConfig = {
+    apiKey: "AIzaSyCnyB6tkXdU2-eqwAHik_LEvv55G4Q5UlE",
+    authDomain: "gogreen-43532.firebaseapp.com",
+    databaseURL: "https://gogreen-43532-default-rtdb.firebaseio.com",
+    projectId: "gogreen-43532",
+    storageBucket: "gogreen-43532.appspot.com",
+    messagingSenderId: "424917581904",
+    appId: "1:424917581904:web:b8095788f827516e80d155"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(config);</script>
+
+  var databse=firebase.database();
+var name,age,gender,crop,price,state,city,pin,number;
+
+function Ready(){
+    name=document.getElementById('namebox').value;
+    age=document.getElementById('agebox').value;
+    gender=document.getElementById('genderbox').value;
+    crop=document.getElementById('state').value;
+    price=document.getElementById('pricebox').value;
+    state=document.getElementById('state').value;
+    city=document.getElementById('citybox').value;
+    pin=document.getElementById('pinbox').value;
+    number=document.getElementById('numberbox').value;
+}
+
+document.getElementById('insert').onclick=function(){
+    Ready();
+    databse.ref('farmer/'+name).set({
+        NameOfFarmer:name,
+        Age:age,
+        Gender:gender,
+        Crop:crop,
+        Price:price,
+        State:state,
+        City:city,
+        Pin:pin,
+        Number:number,
+
+    });
+}
+
+</script>
+ -->
+
+
+
+    </body>
+</html>

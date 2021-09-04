@@ -1,0 +1,808 @@
+
+ 
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+        
+      body {
+        background: url(./img/eco.gif);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+      }
+
+      .MO {
+        height: 420px;
+        width: 500px;
+        justify-content: right;
+        margin: auto;
+        margin-top: 0px;
+      }
+      .content {
+
+        color: #003b33;
+        width: 700px;
+        max-height: 400px;
+        background: rgb(214, 40, 40);
+        margin-top: 0px;
+        background: none;
+        display: grid;
+        text-align: left;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 150px 250px;
+        overflow-y: scroll;
+      }
+      .content::-webkit-scrollbar {
+        width: 1em;
+      }
+
+      .content::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .content::-webkit-scrollbar-thumb {
+        background-color: rgb(0, 47, 0);
+        outline: 1px solid rgb(154, 241, 154);
+      }
+      body::-webkit-scrollbar {
+        width: 1em;
+      }
+
+      body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: rgb(15, 19, 15);
+        outline: 1px solid slategrey;
+      }
+      body {
+        min-height: 900px;
+        max-height: 900px;
+      }
+      .des {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-family: cursive;
+        font-size: 20px;
+        margin: 20px;
+        min-height: 400px;
+        text-align: justify;
+        padding: 20px;
+      }
+      .pic {
+        border-radius: 10px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 250px;
+        height: 150px;
+        margin: 10px;
+        margin-top: 10px;
+        background: rgb(3, 3, 3);
+        margin-bottom: 40px;
+      }
+
+      .search-box {
+        height: 200px;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        margin-top: 40px;
+        left: 30%;
+        align-items: center;
+      }
+
+      .search {
+        font-family: "Playfair Display", serif;
+        border-radius: 0px;
+        height: 40px;
+        width: 60%;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 19px;
+        outline: none;
+        padding-right: 10px;
+        background-color: rgb(10, 7, 0);
+        border: none;
+        color: aliceblue;
+        margin-left: 10%;
+        opacity: 0.8;
+        
+      }
+      .main {
+        height: 700px;
+        width: 50%;
+       
+        
+      }
+      .m {
+        background: none;
+      }
+      .fa{
+          font-size: 60px;
+      }
+      #c1 {
+      }
+      .extra {
+        display: none;
+      }
+      .p1 {
+        background-image: url("./img/img2.jpg");
+        background-size: cover;
+      }
+      .p2 {
+        background-image: url("./img/img12.jpg");
+        background-size: cover;
+      }
+      .p3 {
+        background-image: url("./img/img4.jpg");
+        background-size: cover;
+      }
+      .p4 {
+        background-image: url("./img/img5.jpg");
+        background-size: cover;
+      }
+      .p5 {
+        background-image: url("./img/img1.jpg");
+        background-size: cover;
+      }
+      .p6 {
+        background-image: url("./img/img8.jpg");
+        background-size: cover;
+      }
+      .p7 {
+        background-image: url("./img/img9.jpg");
+        background-size: cover;
+      }
+      .p8 {
+        background-image: url("./img/img10.jpg");
+        background-size: cover;
+      }
+      .p9 {
+        background-image: url("./img/img11.jpg");
+        background-size: cover;
+      }
+      .p10 {
+        background-image: url("./img/img3.jpg");
+        background-size: cover;
+      }
+      .p11 {
+        background-image: url("./img/img7.jpg");
+        background-size: cover;
+      }
+      .p20{
+        background-image: url("./img/img20.jpg");
+        background-size: cover;
+      }
+      .p21{
+        background-image: url("./img/img21.jpg");
+        background-size: cover;
+      }
+      .p22{
+        background-image: url("./img/img22.jpg");
+        background-size: cover;
+
+      }
+      .p23{ background-image: url("./img/img23.jpg");
+        background-size: cover;
+
+      }
+      .p24{ background-image: url("./img/img24.jpg");
+        background-size: cover;
+
+      }
+      .p25{
+        background-image: url("./img/img25.jpg");
+        background-size: cover;
+      }
+      .p26{
+        background-image: url("./img/img26.jpg");
+        background-size: cover;
+      }
+      .Q {
+        font-family: "Playfair Display", serif;
+          padding-top: 40px;
+        margin-top: 300px;
+        margin-left: -700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 50%;
+        /* grid-template-columns: 20% 70% 10%; */
+      }
+      /* #ques {
+        grid-column-start: 0;
+        grid-column-end: 6;
+        margin-left: 0px;
+       
+        
+      } */
+      button {
+        background:#618500;
+        outline: none;
+        border: 2px solid rgb(0, 58, 0);
+        width: 100px;
+        height: 40px;
+        margin: 20px;
+        justify-content: center;
+        font-size: 15px;
+        border-radius: 15px;
+        color: white;
+        font-size: large;
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .Q ic {
+        font-size: 34px;
+        margin-top: 15px;
+        color: rgb(102, 167, 102);
+      }
+.mai{
+   
+}
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:0px;
+        height: 200px;
+       
+      }
+      .arrow{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+       
+       
+      }
+      .dis{
+          margin-top:200px;
+          margin-left:-50%;
+      }
+      h3{
+        font-family: "Playfair Display", serif;
+        font-size: xx-large;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index2.html" style="text-decoration: none;">
+        <header class="codrops-header">
+                      
+          <h1 class="codrops-header__title" 
+           style="font-size: 1.6vw;
+                  color: rgb(0, 73, 0);
+                  font-family: 'Open Sans Condensed', sans-serif;
+                  padding: 12px;
+                  text-transform: capitalize;
+                  letter-spacing: 2px;
+                  text-shadow: rgb(205, 218, 255) 2px 2px;
+                  text-decoration: none;
+                  
+          ">Go-Green</h1>
+                  </header></a>
+    <div class="mai">
+      <div class="m">
+       
+        
+      </div>
+     <div class="main">
+
+         <div class="m">
+           <h3>Welcome to <b  style="color: #618500; font-size: 2.2rem;"> ECO-BOT</b>, Let’s save the nature <b style="color: #618500; font-size: 2.2rem;"">TOGETHER</b></h3>
+           <div class="arrow">
+               
+                   <ic class="fa fa-arrow-circle-left" style="color: #618500;" onclick="back()"></ic
+               
+               <div class="search-box">
+                 <input
+                   id="inputt"
+                   class="search"
+                   type="text"
+                   value="1. Hey choose the category of your plant"
+                   readonly
+                 />
+               </div>
+           </div>
+   
+           <div class="Q">
+             <div id="ques"></div>
+           </div>
+     </div>
+<div class="dis">
+
+    <div class="MO" id="MOU"></div>
+</div>
+      </div>
+    </div>
+    <div class="foot"></div>
+    <div class="extra">
+      <div id="rose">
+        <div class="content">
+          <div class="pic p1"></div>
+          <div class="des">
+            Plant roses in rich, well-draining soil. When planting, mix organic
+            matter, such as compost or ground bark, into excavated soil you will
+            use to backfill the planting hole. Add a 2-3-inch layer of coarse,
+            organic mulch around roses. Coarse mulch helps reduce foliage
+            diseases on roses because it reduces the amount of water splashing
+            onto leaves (splashing water drops can spread fungal diseases).
+            Irrigate roses deeply but infrequently, applying water directly to
+            soil using soaker hoses or drip irrigation. Water needs vary based
+            on weather and soil, so check soil with your finger. Water often
+            enough to create consistently moist soil – not overly wet, not
+            bone-dry. To prevent diseases, keep foliage dry, especially if you
+            must water late in the day.
+          </div>
+        </div>
+      </div>
+      <div id="marigold">
+        <div class="content">
+          <div class="pic p2"></div>
+          <div class="des">
+            Marigolds are easygoing plants that bloom reliably, even in direct
+            sunlight, punishing heat and poor to average soil. Although they are
+            beautiful in the ground, growing marigolds in containers is a
+            surefire way to enjoy this delightful plant. Read on to learn how to
+            grow marigolds in containers. Any type of marigold can be grown in
+            containers, but keep in mind that some types, such as African
+            marigolds, can reach heights of up to 3 feet (1 m.) and may be too
+            large for standard containers. Don’t crowd potted marigold plants,
+            as healthy marigolds require plenty of air circulation. One marigold
+            is enough for a 6-inch (15 cm.) pot, but you can grow two or three
+            in a 12-inch (30 cm.) pot, and five or more small plants in a large
+            container with a diameter of 18 inches (45 cm.).
+          </div>
+        </div>
+      </div>
+      <div id="hibiscus">
+        <div class="content">
+          <div class="pic p3"></div>
+          <div class="des">
+            Growing hibiscus is an easy way to add a tropical flair to your
+            garden. When you know how to care for hibiscus plants, you will be
+            rewarded with many years of lovely flowers. Let’s look at some tips
+            on how to care for hibiscus. Hibiscus plants prefer a cozy fit when
+            growing in a container. This means that they should be slightly root
+            bound in the pot and when you do decide to repot, give the hibiscus
+            only a little bit more room. Always make sure that your growing
+            hibiscus plant has excellent drainage. When you care for a hibiscus,
+            you should remember that hibiscus flowers best in temperatures
+            between 60-90 F. (16-32 C.) and cannot tolerate temps below 32 F. (0
+            C.). In the summer, your hibiscus plant can go outside, but once the
+            weather starts to get near freezing, it’s time for you to bring your
+            hibiscus indoors. When hibiscus are in their blooming stage, they
+            require large amounts of water. Your hibiscus will need daily
+            watering in warm weather. But once the weather cools, your hibiscus
+            needs far less water, and too much water can kill it. In the winter,
+            water your hibiscus only when the soil is dry to the touch.
+          </div>
+        </div>
+      </div>
+
+      <div id="peas">
+        <div class="content">
+          <div class="pic p5"></div>
+          <div class="des">
+            A trouble free crop that enjoy cooler weather. Sow them directly
+            into the ground from March to June. Peas need a deep watering right
+            at the time of planting in order to help them establish themselves
+            in their new home. Provide at least one inch of water per week and
+            try to keep the soil from drying out completely, checking moisture
+            levels daily. Also, do remember if the climate is too hot then
+            increase the one inch supply of water so that the moisture is
+            maintained.
+          </div>
+        </div>
+      </div>
+
+      <div id="apple">
+        <div class="content">
+          <div class="pic p7"></div>
+          <div class="des">
+            Apple trees are prone to a host of pests (such as codling moths,
+            photo, right) and diseases (such as apple scab, photo, above).
+            Keeping the area around a tree clean by pulling weeds to prevent
+            nutrient competition and clearing any plant debris to reduce disease
+            transmission go a long way toward preventing problems. In addition,
+            Elmer recommends killing pests during the season and spraying apple
+            trees with dormant oil every year to protect trees from
+            overwintering pests, larvae, and eggs. Organic sprays are available,
+            but they should be used with caution; follow the package directions
+            to the letter. Pruning an apple tree every year is not just
+            recommended—it’s essential. You will need to prune your apple
+            tree—to train it to a central leader the first year and for
+            maintenance every year after that—to stimulate fruit production and
+            to keep the tree open and balanced. Without regular pruning, an
+            apple tree produces lots of vegetative growth that then turns into
+            fruiting wood. If a tree has too much fruiting wood, it begins to
+            produce too many apples, which weakens the tree and results in
+            inferior—and eventually fewer and less palatable—apples. The key is
+            to achieve a healthy balance of vegetative growth and fruiting wood
+            so that the tree has enough energy to produce healthy apples.
+          </div>
+        </div>
+      </div>
+      <div id="mango">
+        <div class="content">
+          <div class="pic p8"></div>
+          <div class="des">
+            Mango trees grow easily from seed. Get a fresh mango pit and slit
+            the hard husk. Remove the seed inside and plant it in seed starter
+            mix in a large pot. Situating the seed with ¼-inch (.6 cm.)
+            protruding above the soil surface works best for growing mango
+            trees. Keep the soil evenly moist and place the pot where
+            temperatures remain at least 70 F. (21 C.). Sprouting may occur as
+            early as eight to 14 days, but may take up to three weeks. Keep in
+            mind that your new mango tree seedling will not produce fruit for at
+            least six years. Mango tree care is similar to that of any fruit
+            tree. Water the trees deeply to saturate the long taproot. Allow the
+            top surface of the soil to dry to a depth of several inches before
+            watering again. Withhold irrigation for two months prior to
+            flowering and then resume once fruits begin to produce. Fertilize
+            the tree with nitrogen fertilizer three times per year. Space the
+            feedings and apply 1 pound (.45 kg.) per year of tree growth. Caring
+            for mango trees must also include watching for pests and diseases.
+            Deal with these as they occur with organic pesticides, cultural and
+            biological controls or horticultural oils.
+          </div>
+        </div>
+      </div>
+      <div id="orange">
+        <div class="content">
+          <div class="pic p9"></div>
+          <div class="des">
+            ORANGE 1. Water needed for growing orange trees varies by climate
+            and yearly rainfall totals, but as a rule of thumb, orange tree care
+            involves regular watering in spring to prevent wilting and
+            withholding of irrigation in fall. When taking care of an orange
+            tree, remember that water lowers the solid content of the fruit.
+            Depth of planting also affects how much water you provide during
+            orange tree care. Growing orange trees usually need between 1 and 1
+            ½ inches (2.5-4 cm.) of water per week. Fertilization– Fertilization
+            of growing orange trees depends on the use of the fruit. Extra
+            nitrogen fertilizer results in more oil in the peel. Potassium
+            fertilizer decreases oil in the peel. For high productivity of
+            edible oranges, 1 to 2 pounds (0.5-1 kg.) of nitrogen should be
+            applied yearly to each tree. Fertilizer should include potassium and
+            phosphorus as well as a range of micro-nutrients. If your older
+            orange tree does not produce fruit in abundance, take a soil test of
+            the area where growing orange trees reside to determine what
+            fertilizer ratio is needed. Additional fertilization is often
+            applied by spraying the leaves of the tree once or twice a year.
+            Pruning– Pruning the orange tree for shape is not necessary.
+            However, you should remove any branches that are a foot (31 cm.) or
+            less from the ground. In addition, remove damaged or dying branches
+            once they are noticed. Fertilization of growing orange trees depends
+            on the use of the fruit. Extra nitrogen fertilizer results in more
+            oil in the peel. Potassium fertilizer decreases oil in the peel. For
+            high productivity of edible oranges, 1 to 2 pounds (0.5-1 kg.) of
+            nitrogen should be applied yearly to each tree. Fertilizer should
+            include potassium and phosphorus as well as a range of
+            micro-nutrients. If your older orange tree does not produce fruit in
+            abundance, take a soil test of the area where growing orange trees
+            reside to determine what fertilizer ratio is needed. Additional
+            fertilization is often applied by spraying the leaves of the tree
+            once or twice a year. Pruning the orange tree for shape is not
+            necessary. However, you should remove any branches that are a foot
+            (31 cm.) or less from the ground. In addition, remove damaged or
+            dying branches once they are noticed.
+          </div>
+        </div>
+      </div>
+      <div id="spinach">
+        <div class="content">
+          <div class="pic p10"></div>
+          <div class="des">
+            Spinach needs about one to one and a half inches of rain or
+            irrigation per week. If you don’t get any rain, you will need to
+            manually water your spinach plants. Instead of one long deep soak,
+            spinach plants will do better with three or four light waterings per
+            week.
+          </div>
+        </div>
+      </div>
+      <div id="gardenia">
+        <div class="content">
+          <div class="pic p20"></div>
+          <div class="des">
+            Gardenias are cold-sensitive and may die during severe winters,
+            therefore, gardenias are typically grown outdoors where the winter
+            weather is reasonably tolerable, or grown in pots and moved indoors 
+            for winter. Fall or spring is the most suitable time for planting 
+            the gardenia bush.The gardenia plant can also be successfully grown
+            in containers and treated like houseplants indoors. However, when
+            growing a gardenia bush indoors, you must keep in mind that it requires 
+            bright light and high humidity.The soil, which should be loose and 
+            organic, should be kept moist, but take care not to overwater.
+            Monitor the soil frequently for moisture and water thoroughly as the
+            top inch (2.5 cm.) of soil dries. The gardenia plant should also receive 
+            cooler nighttime temperatures and warmer daytime temperatures.
+            Gardenias require frequent fertilizing to ensure healthy plant growth.
+            Fertilize monthly between April and November using a fertilizer that 
+            is specifically formulated for acid-loving plants. Be careful not to 
+            over-fertilize gardenia plants. Too much fertilizer can lead to salt 
+            accumulation, which can damage the shrub. Do not fertilize gardenias in 
+            the fall, which can stimulate growth. This tender, new growth will 
+            quickly die when exposed to cold winter temperatures.
+          </div>
+        </div>
+      </div>
+      <div id="sunflower">
+        <div class="content">
+          <div class="pic p21"></div>
+          <div class="des">
+            Although sunflowers require a lot of water to germinate,
+            they only require an inch of water per week during the
+            growing season. Use a watering nozzle to easily water once 
+            a week until the top 6 inches of soil is moist.
+            If you prepared your soil with compost and/or manure, you shouldn’t
+            need extra fertilization during the growing season.
+            If you feel your plants require better nutrition, you can work a
+            balanced, slow-acting granular fertilizer into the soil surrounding
+            your sunflowers. Sunflower fertilizers are available in a few garden 
+            centers, but a basic fertilizer is really all you need.
+            One of the greatest sunflower challenges is weed control. 
+            Weeds compete with sunflowers for moisture and nutrition.
+            Unless you want to till, hoe or pull weeds by hand, you’ll want to 
+            put down a generous layer of mulch to fight weeds. Add up 
+            to a 4-inch layer of organic mulch to your sunflower garden. 
+            Leave an area of bare soil around each sunflower stalk to help deter
+            pests and disease.
+          </div>
+        </div>
+      </div>
+      <div id="jasmine">
+        <div class="content">
+          <div class="pic p22"></div>
+          <div class="des">
+            The soil that your Jasmine plant should be planted in can vary quite 
+            a bit. I like to use an organic blend of porous material as well as
+            bark, peat, and other soil that drains well.Jasmine plants like bright 
+            sunlight, so if the plant is indoors, make sure that it is getting 
+            sunlight for up to four hours a day. Having the plant in front of a 
+            southern facing window will do wonders for its growth. During the winter
+            months, the plant will not need quite as much direct sunlight.Being a 
+            tropical plant, Jasmine plants are able to handle hot and humid 
+            temperatures, but they will not survive cold, winter temperatures. 
+            When growing Jasmine, try to keep the temperature between 60 to 75 degrees Fahrenheit. 
+            After the plant is through blooming, you can keep the plant in a cool room, 
+            but no cooler than 41 degrees.
+          </div>
+        </div>
+      </div>
+      <div id="watermelon">
+        <div class="content">
+          <div class="pic p23"></div>
+          <div class="des">
+            When considering how to grow watermelons, know that it is not that difficult
+            . The plant does all the work. They grow great in the south during warmer 
+            seasons, but if you live in the north, there are tips for growing watermelons 
+            that can be followed so you are successful in your endeavors.
+            One of the better tips for growing watermelon plants in the north is
+            that you should start early varieties in the house and plant transplants
+            instead of planting the seed directly into the soil.
+            While the plants can be started indoors and then put outside, don’t start
+            them too early because large growing watermelon seedlings don’t do well when transplanted.
+            Watermelons prefer sandy loam soil over others. Growing watermelons also
+            requires space, as the plants are vines and take up a lot of room. 
+            Seedlings should be planted 2 to 3 feet (.60-.91 m.) apart. You should
+            definitely include 7 to 10 feet (2-3 m.) between rows.Another thing to consider
+            as part of your basic watermelon plant care is that they need plenty of water
+            . You should especially give them water when it gets dry, as it 
+            often does in the dead of summer.
+          </div>
+        </div>
+      </div>
+      <div id="papaya">
+        <div class="content">
+          <div class="pic p24"></div>
+          <div class="des">
+            In addition to proper papaya growing conditions, suitable care
+            of papaya fruit trees is also important. In order for papaya trees
+            to thrive, they require some fertilizer. Provide young plants 
+            fertilizer every 14 days using ¼ pound (113.5 g.) of complete fertilizer. 
+            Fertilize older trees with 1 to 2 pounds (0.5-1 kg.) of fertilizer once a 
+            month. Also, be sure to take a soil sample and amend it as necessary. 
+            Water trees frequently for best fruit production. Mulch trees with 4 inches 
+            (10 cm.) of wood chips to help retain moisture, taking care to keep the mulch 
+            8 to 12 inches (20-30.5 cm.) from the trunk. Protect developing fruit 
+            from pests by placing a paper bag over them until they are ripe.
+          </div>
+        </div>
+      </div>
+      <div id="beetroot">
+        <div class="content">
+          <div class="pic p25"></div>
+          <div class="des">
+            Super-easy to grow root vegetable.Beetroot can be sown directly into moist 
+            ground from March to July. Generally speaking, a good watering schedule
+            for beets provides an inch (2.5 cm.) of water per week. This is a combination 
+            of rainwater and supplemental irrigation. If you receive a half inch (1.5 cm.) 
+            of rain, you only have to provide an additional half inch (1.5 cm.) of irrigation water.
+          </div>
+        </div>
+      </div>
+      <div id="radish">
+        <div class="content">
+          <div class="pic p26"></div>
+          <div class="des">
+            Radishes need water, but not too much. Radishes will thrive in a seedbed with
+            proper drainage. Keep the soil evenly moist, but not soaked. Don't allow the soil
+            to completely dry out before watering. This causes the roots to crack. 
+            The soil should always feel wet to the touch. If you live in an arid climate where 
+            evaporation is a problem, mulch around the plants with a 2-inch layer of lawn
+            clippings. The mulch keeps the weeds down.
+          </div>
+        </div>
+      </div>
+      <div id="potato">
+        <div class="content">
+          <div class="pic p11"></div>
+          <div class="des">
+            Plant potatoes during late February and March in potato bags that
+            are only part filled with compost. When the green shoots begin to
+            appear above the soil, simply cover them with more compost. Repeat
+            until the bag is full. Generally, potatoes need between 1-2 inches
+            of water per week; this could be provided by rain events or you to
+            make up the difference. Water needs for your crop throughout its
+            life goes a little something like this… Planting to 30 days: Water
+            needs not high or critical 30-60 days: Water critical for vegetative
+            growth and early tuber formation 60-90 days: Water critical for
+            tuber bulking 90-120 days: Tops begin to yellow and die back. Water
+            needed but not excessively before harvest
+          </div>
+        </div>
+      </div>
+
+      <!--chat bot kinda-->
+      <div id="flowers">
+        <button onclick="rose()">Rose</button
+        ><button onclick="hibiscus()">Hibiscus</button
+        ><button onclick="marigold()">Marigold</button>
+        <button onclick="sunflower()">Sunflower</button
+            ><button onclick="gardenia()">Gardenia</button
+            ><button onclick="jasmine()">Jasmine</button>
+     
+      </div>
+      <div id="fruits">
+       <button onclick="apple()">Apple</button
+        ><button onclick="orange()">Orange</button
+        ><button onclick="mango()">Mango</button>
+        <button onclick="watermelon()">Water Melon</button>
+        <button onclick="papaya()">Papaya</button>
+      </div>
+      <div id="veg">
+       <button onclick="spinach()">Spinach</button
+        ><button onclick="peas()">Peas</button
+        ><button onclick="potato()">Potato</button>
+        <button onclick="beetroot()">BeetRoot</button>
+        <button onclick="radish()">Radish</button>
+      </div>
+      <div id="questions">
+                <button onclick="flower()">Flower</button
+        ><button onclick="fruit()">Fruit</button
+        ><button onclick="veg()">Vegetable</button>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("ques").innerHTML =
+        document.getElementById("questions").innerHTML;
+      function myFunction(x) {
+        x = document.getElementById("Onse").value;
+        document.getElementById("MOU").innerHTML =
+          document.getElementById(x).innerHTML;
+      }
+      function flower() {
+        document.getElementById("ques").innerHTML =
+          document.getElementById("flowers").innerHTML;
+        document.getElementById("inputt").value = "Choose Your Flower ";
+      }
+      function fruit() {
+        document.getElementById("ques").innerHTML =
+          document.getElementById("fruits").innerHTML;
+        document.getElementById("inputt").value = "Choose Your Fruit ";
+      }
+      function veg() {
+        document.getElementById("ques").innerHTML =
+          document.getElementById("veg").innerHTML;
+        document.getElementById("inputt").value =
+          "Choose Your Vegetable ";
+      }
+      function rose() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("rose").innerHTML;
+        document.getElementById("inputt").value = "ROSE";
+      }
+      function marigold() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("marigold").innerHTML;
+        document.getElementById("inputt").value = "MARIGOLD";
+      }
+      function hibiscus() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("hibiscus").innerHTML;
+        document.getElementById("inputt").value = "HIBISCUS";
+      }
+      function orange() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("orange").innerHTML;
+        document.getElementById("inputt").value = "ORANGE";
+      }
+      function apple() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("apple").innerHTML;
+        document.getElementById("inputt").value = "APPLE";
+      }
+      function mango() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("mango").innerHTML;
+        document.getElementById("inputt").value = "MANGO";
+      }
+      function potato() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("potato").innerHTML;
+        document.getElementById("inputt").value = "POTATO";
+      }
+      function peas() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("peas").innerHTML;
+        document.getElementById("inputt").value = "PEAS";
+      }
+      function spinach() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("spinach").innerHTML;
+        document.getElementById("inputt").value = "SPINACH";
+      }
+      function sunflower() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("sunflower").innerHTML;
+        document.getElementById("inputt").value = "SUNFLOWER";
+      }
+      function gardenia() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("gardenia").innerHTML;
+        document.getElementById("inputt").value = "GARDENIA";
+      }
+      function jasmine() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("jasmine").innerHTML;
+        document.getElementById("inputt").value = "JASMINE";
+      }
+      function watermelon() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("watermelon").innerHTML;
+        document.getElementById("inputt").value = "WATER MELON";
+      }
+      function papaya() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("papaya").innerHTML;
+        document.getElementById("inputt").value = "PAPAYA";
+      }
+      function beetroot() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("beetroot").innerHTML;
+        document.getElementById("inputt").value = "BEET ROOT";
+      }
+      function radish() {
+        document.getElementById("MOU").innerHTML =
+          document.getElementById("radish").innerHTML;
+        document.getElementById("inputt").value = "Radish";
+      }
+      function back() {
+        document.getElementById("ques").innerHTML =
+          document.getElementById("questions").innerHTML;
+        document.getElementById("inputt").value = "Choose Your Option";
+      }
+    </script>
+  </body>
+</html>
